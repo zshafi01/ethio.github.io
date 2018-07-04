@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="utf-8" />
+        <meta name="viewport" content="width= device-width, initial-scale=1">
+        <meta name="description" content="Informatin and news about Ethiopia">
+        <meta name="keywords" content="Ethiopia, Habesha, Africa, turisume">
+        <meta name="author" content="Zulikha Shafi">        
+        <title>ETHIOPIA NEW YEAR</title>
+        <link rel="icon" href="./images/flag.ico">
+        <link rel="stylesheet" href="style.css">
+       
+    </head>
+    <body>
+        <div class="headnav">
+            <nav>
+			<ul>
+                <li class="active"><a href="Lab1-zs.html">HOME</a></li>
+                 <li><a href="slideshow.html">HISTORY</a></li>
+                 <li><a href="contactus.html"> COUNTACT-US</a></li>
+				 <li><a href="quiz.html">QUIZ</a></li>
+                 <li><a href="about-us.html">ABOUT-US</a></li>
+                    </ul>
+            </nav>
+        </div>
+<main>
+    
+    <div class="countt">
+    
+        <p id="date_time"></p>
+       <script>
+        var d = new Date();
+           //diplay current date and time
+       
+        document.getElementById("date_time").innerHTML = d.toLocaleDateString() + "<br/> "+ d.toLocaleTimeString();
+
+</script>
+    </div>
+    
+    
+        <div id="home_image">
+              <img src="./newyear.jpg" alt="pic">
+        </div>
+    
+        <div class="count">
+    <p id="count_down"></p>
+<script>
+    //set new date(Ethiopian new year)
+var newyear = new Date("Sep 11, 2018 12:00:00").getTime();
+var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = newyear - now;
+    var dayinmili=1000 * 60 * 60 * 24;
+    var hourinmili=1000 * 60 * 60;
+    var minitinmili=1000 * 60;
+    var secondinmili=1000;
+    //calculate then number of dates
+    var days = Math.floor(distance / (dayinmili));
+    var hours = Math.floor((distance % (dayinmili)) / (hourinmili));
+    var minutes = Math.floor((distance % (hourinmili)) / (minitinmili));
+    var seconds = Math.floor((distance % (minitinmili)) / secondinmili);
+    //display remaining days since Ethiopian new year
+    document.getElementById("count_down").innerHTML = "Only "+days + "days " + hours + "hours " + minutes + "minutes " + seconds + "seconds left for Ethiopian new year!";
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("count_down").innerHTML = "EXPIRED";
+    }
+}, 1000);
+    
+</script>
+
+    </div>
+    <div id="long_text">
+          <section >
+                <header>
+                    <h2> DO YOU KNOW THIS??? </h2>
+                </header>
+               <article>
+                        <P>                            
+                             Ethiopia has its own calendar with 13 months, and each of the 12 months has 30 days, and the 13th month called Pagumen has five days, which becomes six in each leap year.<br>The Ethiopian New Year comes at the time when the heavy rainfall starts to cease, and the bright sun comes to shine over the green land, which is also covered by the golden flower known in Amharic language as “Adey Abeba”. As it comes with change of the season, the New Year in Ethiopia is celebrated with new hope, and the people are making special preparations.
+                         <a href="https://www.herald.co.zw/ethiopia-marks-new-year/"><em>read more...</em></a>
+                   </P>
+              </article>
+            </section>
+        </div>
+        <div class="shope_holder">
+            <div class="shopes">
+                <div class="shops_head">
+                  <iframe width="420" height="250" src="https://www.youtube.com/embed/XN1HM_he-IY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                </div>
+            <div class="shopes">
+                <div class="shops_head">
+                  <iframe width="420" height="250"  src="https://www.youtube.com/embed/v9p-NSkte-I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="shops_body">
+                </div>
+            </div>
+            <div class="shopes">
+                <div class="shops_head">
+                   <iframe width="420" height="250" src="https://www.youtube.com/embed/OgSWQ6EH9HA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                               
+                </div>
+            </div>
+    
+</main>
+          
+        <div class="footersection">
+            <footer>
+                        <address>
+                            To know more about Ethiopia visit our office:<br>
+                            Visit Ethiopia Travel Agency<br>                           
+                            Office Address: Valley Ranch<br>Irving, Tx, 75063<br>
+                            <a href="Tel:+12062291518">206-229-1518</a>
+                        </address>
+                   
+                <p>
+                     
+                    <sup>©</sup>Copyright by Zulikha Shafi<br>
+                   
+                </p>
+        </footer>
+        </div>
+        
+    </body>
+   
+</html>

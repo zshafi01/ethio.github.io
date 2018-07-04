@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="utf-8" />
+        <meta name="viewport" content="width= device-width, initial-scale=1">
+        <meta name="description" content="Informatin and news about Ethiopia">
+        <meta name="keywords" content="Ethiopia, Habesha, Africa, turisume">
+        <meta name="author" content="Zulikha Shafi">        
+        <title>ETHIOPIA NEW YEAR</title>
+        <link rel="icon" href="./images/flag.ico">
+        <link rel="stylesheet" href="style.css">
+       
+    </head>
+    <body>
+        <div class="headnav">
+            <nav>
+                    
+                     <ul>
+                        <li ><a href="Lab1-zs.html">HOME</a></li>
+                       <li><a href="slideshow.html">HISTORY</a></li>
+                        <li class="active"><a href="contactus.html"> COUNTACT-US</a></li>
+						 <li><a href="quiz.html">QUIZ</a></li>
+                       <li><a href="about-us.html">ABOUT-US</a></li>
+                    </ul>
+            </nav>
+        </div>
+        <div class="countt">
+    
+        <p id="date_time"></p>
+       <script>
+        var d = new Date();
+           //diplay current date and time
+       
+        document.getElementById("date_time").innerHTML = d.toLocaleDateString() + "<br/> "+ d.toLocaleTimeString();
+
+</script>
+    </div>
+<div class="mainform">
+                <div class="formsection">
+                        <form method="post" action="mailto:zshafi01@gmail.com" name="myForm" onsubmit="return validateForm()">
+                            <br>
+                            <br>
+                        <fieldset>
+                            <legend>We love to hear from you!</legend>
+                        <table align="center">
+                            <tr>
+                                <td> <label for="firstName">First name:</label></td>
+                                <td> <input type="text" name="firstName" id="firstName"></td>
+                            </tr>
+                            <tr>
+                                <td> <label for="lastName"> Last name:</label>  </td>
+                                <td> <input type="text" name="lastName" id="lastName"></td>
+                            </tr>
+                            <tr>
+                                <td> <label for="age"> Age: </label></td>
+                                <td> <input type="text" name="age" id="age"></td>
+                            </tr>
+                            <tr>
+                                <td> <label for="email"> Email:</label> </td>
+                                <td> <input type="text" name="email" id="email"></td>
+                            </tr>
+                            <tr>
+                                <td> <label for="Remember">Remember my Email:</label></td>
+                                <td> 
+                                    <input type="checkbox" name="Remember" value="YES">YES
+                                    <input type="checkbox" name="Remember" value="NO">NO
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <label for="gender"> Gender:</label></td>
+                                <td> 
+                                    <input type="radio" name="gender" value="male" checked> Male
+                                    <input type="radio" name="gender" value="female"> Female
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label>Phone Type</label></td>
+                                <td>
+                                    <select name="Phone Type" >
+                                        <option value="Cell Phone" > Cell Phone </option>
+                                        <option value="Home Phone" >  Home Phone </option>
+                                        <option value="Work Phone" > Work Phone </option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="phoneNumber">Phone Number</label></td>
+                                <td><input type="text" name="phoneNumber" id="phoneNumber"></td>
+                            </tr>
+                            <tr>
+                            <td> <label for="comment">Comments:</label></td>
+                            <td> <textarea name="comment" cols="35" rows="7" id="comment"> </textarea></td></tr>
+                              <br>
+                            <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" value="SUBMIT">
+                                <input type="reset"  value="RESET">
+                            </td>   
+                            </tr> 
+                            <br>
+                        </table> 
+                        </fieldset>
+                        </form>                   
+                    </div>  
+            <script>
+        function validateForm(){
+            var firstNameInput=document.forms["myForm"]['firstName'];
+            var firstName=firstNameInput.value;
+            var fnregx= /^[a-zA-Z ]+$/;
+            var lnregx= /^[a-zA-Z]+$/;
+            var ageregx=/^[0-9]+$/;
+            var phoneregx=/^[0-9 -/_]+$/;
+            
+                if(firstName==null || firstName==""){
+                alert("First name is required");
+                firstNameInput.style.borderColor="red";
+                return false;}
+                else if(firstName.length<2){
+                alert("First name must be at least two");
+                firstNameInput.style.borderColor="red";
+                return false;}
+                else if(!fnregx.test(firstName)){
+                alert("First name must be letter.");
+                firstNameInput.style.borderColor="red";
+                return false;}   
+            var lastNameInput=document.forms["myForm"]['lastName'];
+            var lastName=lastNameInput.value;
+                if(lastName==null || lastName==""){
+                alert("Last name is required");
+                lastNameInput.style.borderColor="red";
+                return false;}
+                else if(lastName.length<2){
+                alert("Last name must be at least two");
+                lastNameInput.style.borderColor="red";
+                return false;}
+                 else if(!lnregx.test(lastName)){
+                alert("Last name must be letter.");
+                lastNameInput.style.borderColor="red";
+                return false;}  
+            var ageInput=document.forms["myForm"]['age'];
+            var age=ageInput.value;
+            if(age==null || age==""){
+                alert("Age is required");
+                ageInput.style.borderColor="red";
+                return false;
+            }
+            else if(!ageregx.test(age)){
+                alert("Age has to be number only.");
+                ageInput.style.borderColor="red";
+                return false;} 
+          //email
+            
+            
+            var emailInput=document.forms["myForm"]['email'];
+            var email=emailInput.value;
+           
+            if(email==null || email==""){
+                alert("Email is required");
+                emailInput.style.borderColor="red";
+                return false;
+            }
+           
+            else if(email.indexOf('@')<=0){
+                     alert("Email has to have @ sign.");
+                     emailInput.style.borderColor="red";
+                return flse;
+                     }
+           
+         
+           else if((email.charAt(email.length-4)!='.')&&(email.charAt(email.length-3)!='.')){
+                alert("Email has to have dot.");
+                emailInput.style.borderColor="red";
+                return false;
+            }          
+                
+            var phoneNumberInput=document.forms["myForm"]['phoneNumber'];
+            var phoneNumber=phoneNumberInput.value;
+            if(phoneNumber==null || phoneNumber==""){
+                alert("Phone Number is required");
+               phoneNumberInput.style.borderColor="red";
+                return false;
+            }
+               
+             else if(!phoneregx.test(phoneNumber)){
+                alert("phone has to be number only.");
+                ageInput.style.borderColor="red";
+                return false;} 
+        }
+        </script>
+
+         <div  class="sidebar">
+                <aside>
+                <a href="firework.jpg"><img src="firework.jpg" height="450" width="340 " align="center" alt="Ethiopian Cultural cloth"></a>
+                </aside>
+            </div>
+            </div>
+          <div class="footersection">
+            <footer>
+                        <address>
+                            To know more about Ethiopia visit our office:<br>
+                            Visit Ethiopia Travel Agency<br>                           
+                            Office Address: Valley Ranch<br>Irving, Tx, 75063<br>
+                            <a href="Tel:+12062291518">206-229-1518</a>
+                        </address>
+                   
+                <p>
+                     
+                    <sup>©</sup>Copyright by Zulikha Shafi<br>
+                 
+                </p>
+        </footer>
+        </div>
+    </body>
+</html>

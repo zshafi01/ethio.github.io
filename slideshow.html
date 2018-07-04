@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="utf-8" />
+        <meta name="viewport" content="width= device-width, initial-scale=1">
+        <meta name="description" content="Informatin and news about Ethiopia">
+        <meta name="keywords" content="Ethiopia, Habesha, Africa, turisume">
+        <meta name="author" content="Zulikha Shafi">        
+        <title>ETHIOPIA NEW YEAR</title>
+        <link rel="icon" href="./images/flag.ico">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="headnav">
+            <nav>
+                    
+                    <ul>
+                        <li ><a href="Lab1-zs.html">HOME</a></li>
+						<li class="active"><a ref="slideshow.html">HISTORY</a></li>
+                        <li><a href="contactus.html"> COUNTACT-US</a></li>
+						 <li><a href="quiz.html">QUIZ</a></li>
+                       <li><a href="about-us.html">ABOUT-US</a></li>
+                    </ul>
+            </nav>
+        </div>
+		<div class="countt">
+    
+        <p id="date_time"></p>
+       <script>
+        var d = new Date();
+           //diplay current date and time
+       
+        document.getElementById("date_time").innerHTML = d.toLocaleDateString() + "<br/> "+ d.toLocaleTimeString();
+	
+		</script>
+</div>
+<main>
+         <div class="slideshow">
+    		<img class="slide" src="./newyear1.jpg" alt="pic" style="width:100%">
+			 <img class="slide" src="./newyear2.jpg" alt="pic" style="width:100%" >
+			 <img class="slide" src="./newyear3.jpg" alt="pic" style="width:100%" >
+			 <img class="slide" src="./newyear4.jpg" alt="pic" style="width:100%" >
+			 <img class="slide" src="./newyear5.jpg" alt="pic"  style="width:100%">
+			 
+			 <button class="display-left" onclick="plusDivs(-1)" >&#10094;</button>
+				
+			<button class="display-right" onclick="plusDivs(1)" >&#10095;</button>
+	        </div>
+        <div id="long_text">
+          <section >
+                <header>
+                    <h2> History About Ethiopia New year! </h2>
+                </header>
+               <article>
+                        <P>                            
+                             The month of Meskerem, which marks the beginning of the year according to the Ethiopian calendar, is a month of celebrations and new beginnings for Ethiopia. The Ethiopian New Year, Enkutatash, marks the culmination of the long rainy season and the warm welcoming of the harvest and the sunny weather of spring. As the fertile highlands become blanketed in lush greenery and beautiful yellow daisies, people of all ages take place in joyous festivities.
+                         <a href="https://ecadforum.com/2017/09/10/ancient-origins-of-the-ethiopian-new-year//"><em>read more...</em></a>
+                   </P>
+              </article>
+            </section>
+        </div>
+        
+</main>
+          
+        <div class="footersection">
+            <footer>
+                        <address>
+                            To know more about Ethiopia visit our office:<br>
+                            Visit Ethiopia Travel Agency<br>                           
+                            Office Address: Valley Ranch<br>Irving, Tx, 75063<br>
+                            <a href="Tel:+12062291518">206-229-1518</a>
+                        </address>
+                   
+                <p>
+                     
+                    <sup>©</sup>Copyright by Zulikha Shafi<br>
+                   
+                </p>
+        </footer>
+        </div>
+        
+    </body>
+	<script>
+		
+		var slideIndex = 1;
+		showDivs(slideIndex);
+		
+		function plusDivs(n){
+			showDivs(slideIndex = slideIndex + n);
+		}
+		function showDivs(n){
+			var i;
+			var x = document.getElementsByClassName("slide");
+				if (n > x.length) {
+					slideIndex = 1
+				}
+				if(n < 1){
+					slideIndex = x.length
+				}
+				for(i=0; i < x.length; i++){
+					x[i].style.display = "none";
+			    }
+		           x[slideIndex - 1].style.display = "block";
+			}
+		
+		</script>
+   
+</html>

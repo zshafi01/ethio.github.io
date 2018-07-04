@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="utf-8" />
+        <meta name="viewport" content="width= device-width, initial-scale=1">
+        <meta name="description" content="Informatin and news about Ethiopia">
+        <meta name="keywords" content="Ethiopia, Habesha, Africa, turisume">
+        <meta name="author" content="Zulikha Shafi">        
+        <title>ETHIOPIA NEW YEAR</title>
+        <link rel="icon" href="./images/flag.ico">
+        <link rel="stylesheet" href="style.css">
+
+		<div class="headnav">
+            <nav>
+              <ul>
+                <li ><a href="Lab1-zs.html">HOME</a></li>
+				<li class="active"><a href="slideshow.html">HISTORY</a></li>
+                <li><a href="contactus.html"> COUNTACT-US</a></li>
+				<li class="active"><a href="quiz.html">QUIZ</a></li>
+                <li><a href="about-us.html">ABOUT-US</a></li>
+              </ul>
+            </nav>
+        </div>
+		<div class="countt">
+            <p id="date_time"></p>
+       <script>
+     		var d = new Date();
+//           diplay current date and time
+             document.getElementById("date_time").innerHTML = d.toLocaleDateString() + "<br/>"+ d.toLocaleTimeString();
+			</script>
+</div>
+		   </head>
+	  <body>
+<div class="container">
+<!--	//questions-->
+	<div class="quiz">
+		<h1>Are you ready to take quiz?</h1>
+	</div>
+	<div class="question">
+		<br>
+		<label> 1. How many months Ethiopia has?</label><br>
+		<input type="radio" name="q1" value="12" onclick="checkAnswer(this);">12
+		<input type="radio" name="q1" value="13" onclick="checkAnswer(this);"> 13
+		<input type="radio" name="q1" value="10" onclick="checkAnswer(this);"> 10
+		<input type="radio" name="q1" value="9" onclick="checkAnswer(this);"> 9 <br><br>
+  		<label> 2. When is Ethiopian new year?</label><br>
+		<input type="radio" name="q2" value="September" onclick="checkAnswer(this);"> September
+		<input type="radio" name="q2" value="November" onclick="checkAnswer(this);"> November
+		<input type="radio" name="q2" value="January"onclick="checkAnswer(this);"> January
+		<input type="radio" name="q2"  value="December" onclick="checkAnswer(this);"> December <br><br>
+		<label> 3. What do the call Ethiopian their new year?</label>
+		<input type="radio" name="q3" value="Chrismax" onclick="checkAnswer(this);"> Chrismax
+		<input type="radio" name="q3" value="Eid" onclick="checkAnswer(this);"> Eid
+		<input type="radio" name="q3" value="Adis Amet/Enkutatash" onclick="checkAnswer(this);"> Adis Amet/Enkutatash
+		<input type="radio" name="q3" value="Halewin" onclick="checkAnswer(this);"> Halewin <br><br>
+		<label> 4. Where is Ethipia located?</label>
+		<input type="radio" name="q4" value="North America" onclick="checkAnswer(this);"> North America
+		<input type="radio" name="q4" value="South Africa" onclick="checkAnswer(this);"> South Africa
+		<input type="radio" name="q4" value="Asia" onclick="checkAnswer(this);"> Asia
+		<input type="radio" name="q4" value="East Africa" onclick="checkAnswer(this);"> East Africa<br><br>
+		<label> 5. What do Ethiopian call the yellow flower that grow on newyear?</label>
+		<input type="radio" name="q5" value="rose ababa" onclick="checkAnswer(this);"> rose ababa
+		<input type="radio" name="q5" value="adeyababa" onclick="checkAnswer(this);"> adey ababa
+		<input type="radio" name="q5" value="Enbut ababa" onclick="checkAnswer(this);"> Enbut ababa
+		<input type="radio" name="q5" value="tsigereda ababa" onclick="checkAnswer(this);"> tsigereda ababa<br><br>
+		<label> 6. The Ethiopian kids will do________on newyear?</label>
+		<input type="radio" name="q6" value="Cry" onclick="checkAnswer(this);"> Cry
+		<input type="radio" name="q6" value="Sing" onclick="checkAnswer(this);"> Sing 
+		<input type="radio" name="q6" value="watch tv" onclick="checkAnswer(this);"> watch tv
+		<input type="radio" name="q6" value="eat" onclick="checkAnswer(this);"> eat <br><br>
+		<label> 7. The last month of Ethiopia called?</label>
+		<input type="radio" name="q7" value="Hidar" onclick="checkAnswer(this);"> Hidar
+		<input type="radio" name="q7" value="Tehasas" onclick="checkAnswer(this);"> Tehasas
+		<input type="radio" name="q7" value="Meskerem" onclick="checkAnswer(this);"> Meskerem
+		<input type="radio" name="q7" value="Pagume" onclick="checkAnswer(this);"> Pagume<br><br>
+		<label> 8. Ethiopian flag is?</label><br>
+		<input type="radio" name="q8" value="green,yellow,red" onclick="checkAnswer(this);"> green,yellow,red
+		<input type="radio" name="q8" value="white,red,blue" onclick="checkAnswer(this);"> white,red,blue
+		<input type="radio" name="q8" value="green,white" onclick="checkAnswer(this);"> green,white
+		<input type="radio" name="q8" value="blue,green,white" onclick="checkAnswer(this);"> blue,green,white <br><br>
+		<label> 9. The weather will be_______when new year start?</label><br>
+		<input type="radio" name="q9" value="suny" onclick="checkAnswer(this);"> suny
+		<input type="radio"  name="q9" value="windy" onclick="checkAnswer(this);"> windy
+		<input type="radio"  name="q9" value="rainy" onclick="checkAnswer(this);"> rainy
+		<input type="radio"  name="q9" value="snow" onclick="checkAnswer(this);"> snow<br><br>
+		<label> 10 Who is the author of this web-site?</label><br>
+		<input type="radio" name="q10" value="Alemu" onclick="checkAnswer(this);"> Alemu
+		<input type="radio" name="q10" value="Zulikha" onclick="checkAnswer(this);"> Zulikha
+		<input type="radio" name="q10" value="Zikra" onclick="checkAnswer(this);"> Zikra
+		<input type="radio" name="q10" value="Ezedin" onclick="checkAnswer(this);"> Ezedin
+		
+	</div>
+	<div class="praise">
+	        <div align="center">
+            <h3><strong> Your Score! </strong></h3>
+
+            <div id="tree" style="position:absolute;  top:300px; visibility:visible; z-index:1; margin-top: 10px; "><img src="pole.png" width="70%"; height="500px"></div>
+  
+            <div id="flag" style="position:absolute; top: 600px; visibility:visible; z-index:1; left:83%;"><img  src="ethio_flag.png"> </div> 
+			<button type="button" value="click" onclick="calculate_result()">Submit</button>
+		
+		
+</div>
+	</div>
+		  </div>
+	</body>
+	<script language="JavaScript" type="text/JavaScript">
+		var correct=0;
+		var scores=[];
+		var score=0;
+		var col = 0;
+		function calculate_result(){
+			debugger;
+			correct=0;
+			for(i=0; i<scores.length; i++){
+					if(scores[i]==1){
+						correct=correct+1;
+						
+					}
+				}
+			show_result();
+			col=0;
+		}
+            //make the flag go up acording to the score
+			function show_result(){ 
+	           document.getElementById("flag").style.top = 600 -(correct * 35)+"px"; 
+				//alerting the score
+		var total=correct;
+		
+				alert(total+"/"+"10");
+				if(total==10){
+					alert("CONGRATULATION");
+				}
+
+           }
+//		answer
+		var answers=["13","September","Adis Amet/Enkutatash","East Africa","adeyababa","Sing","Pagume","green,yellow,red","suny","Zulikha"];
+//		compairing the answer
+		function checkAnswer(elm){
+//			
+			if(elm.name=="q1"){
+				if(elm.value==answers[0]){
+//					
+					scores[0]=1;
+					
+				}else{
+					scores[0]=0;
+				}
+			}else if(elm.name=="q2"){
+				if(elm.value==answers[1]){
+					scores[1]=1;
+					
+				}else{
+					scores[1]=0;
+				}
+			}
+			else if(elm.name=="q3"){
+				if(elm.value==answers[2]){
+					scores[2]=1;
+					
+				}else{
+					scores[2]=0;
+				}
+			}
+			else if(elm.name=="q4"){
+				if(elm.value==answers[3]){
+					scores[3]=1;
+					
+				}else{
+					scores[3]=0;
+				}
+			}
+			else if(elm.name=="q5"){
+				if(elm.value==answers[4]){
+					scores[4]=1;
+					
+				}else{
+					scores[4]=0;
+				}
+			}
+			else if(elm.name=="q6"){
+				if(elm.value==answers[5]){
+					scores[5]=1;
+					
+				}else{
+					scores[5]=0;
+				}
+			}
+			else if(elm.name=="q7"){
+				if(elm.value==answers[6]){
+					scores[6]=1;
+					
+				}else{
+					scores[6]=0;
+				}
+			}
+			else if(elm.name=="q8"){
+				if(elm.value==answers[7]){
+					scores[7]=1;
+					
+				}else{
+					scores[7]=0;
+				}
+			}
+			else if(elm.name=="q9"){
+				if(elm.value==answers[8]){
+					scores[8]=1;
+					
+				}else{
+					scores[8]=0;
+				}
+			}
+			else if(elm.name=="q10"){
+				if(elm.value==answers[9]){
+					scores[9]=1;
+					
+				}else{
+					scores[9]=0;
+				}
+			}
+			
+		}
+        
+        </script>
+		
+</html>
